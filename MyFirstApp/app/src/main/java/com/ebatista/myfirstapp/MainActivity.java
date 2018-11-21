@@ -12,30 +12,21 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-
     Switch switchButton;
     TextView textView, rcTextView, ixmTextView, rxmTextView;
 
     Button b, buttonTen, buttonPot, buttonCorr;
-//    b = (Button) findViewById(R.id.buttonSend)
 
     String ensaioCC = "Ensaio CC";
     String ensaioCA = "Ensaio CA";
-
-//    String rcStringResult = rcView.getText().toString();
 
     Double RC = 1.0;
     Double RXM = 1.0;
     Double IXM = 1.0;
 
-//    Double T = 15.0;
-//    Double P = 16.0;
-//    Double I = 80.0;
-
-    Boolean showRC = false;
-    Boolean showRXM = false;
-    Boolean showIXM = false;
+//    Boolean showRC = false;
+//    Boolean showRXM = false;
+//    Boolean showIXM = false;
 
     Double tensao, potencia, corrente;
 
@@ -54,49 +45,14 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean bChecked) {
                 if (!bChecked) {
                     textView.setText(ensaioCC);
-                    showIXM = true;
-
+//                    showIXM = true;
                 } else {
                     textView.setText(ensaioCA);
-                    showRC = true;
-                    showRXM = true;
+//                    showRC = true;
+//                    showRXM = true;
                 }
             }
         });
-
-//        EditText tensaoText = (EditText) findViewById(R.id.Tensao);
-//        EditText potenciaText = (EditText) findViewById(R.id.Potencia);
-//        EditText correnteText = (EditText) findViewById(R.id.Corrente);
-
-//        buttonTen = (Button) findViewById(R.id.buttonTensao);
-//        buttonTen.setOnClickListener( new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                EditText tensaoText = (EditText) findViewById(R.id.Tensao);
-//                if(!tensaoText.equals(null))
-//                    tensao = Double.parseDouble(tensaoText.getText().toString());
-//            }
-//        });
-//
-//        buttonPot = (Button) findViewById(R.id.buttonPotencia);
-//        buttonPot.setOnClickListener( new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                EditText potenciaText = (EditText) findViewById(R.id.Potencia);
-//                if(!potenciaText.equals(null))
-//                    potencia = Double.parseDouble(potenciaText.getText().toString());
-//            }
-//        });
-//
-//        buttonCorr = (Button) findViewById(R.id.buttonCorrente);
-//        buttonCorr.setOnClickListener( new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                EditText correnteText = (EditText) findViewById(R.id.Corrente);
-//                if(!correnteText.equals(null))
-//                    corrente = Double.parseDouble(correnteText.getText().toString());
-//            }
-//        });
 
         b = (Button) findViewById(R.id.buttonSend);
         b.setOnClickListener( new View.OnClickListener(){
@@ -147,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 //                    resultadosView.setVisibility(View.VISIBLE);
                 }
 
-                //ignorar, nao precisar fazer o display na tela do IXM
+                //ignorar, nao precisa fazer o display na tela
                 //TODO: Remover essa visualização do IXM
                 try {
                     TextView ixmView = findViewById(R.id.ixmTextView);

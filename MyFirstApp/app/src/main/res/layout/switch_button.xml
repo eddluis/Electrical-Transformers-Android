@@ -121,7 +121,7 @@
         android:lineSpacingExtra="8sp"
         android:text="RC"
         android:textSize="18sp"
-        android:visibility="visible"
+        android:visibility="invisible"
         tools:text="RC" />
 
     <TextView
@@ -132,7 +132,7 @@
         android:lineSpacingExtra="8sp"
         android:text="IXM:"
         android:textSize="18sp"
-        android:visibility="visible"
+        android:visibility="invisible"
         tools:text="IXM" />
 
     <TextView
@@ -143,7 +143,7 @@
         android:lineSpacingExtra="8sp"
         android:text="RXM"
         android:textSize="18sp"
-        android:visibility="visible"
+        android:visibility="invisible"
         tools:text="RXM" />
 
 
